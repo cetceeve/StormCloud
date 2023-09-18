@@ -1,0 +1,67 @@
+city,country,id
+Changhua County,Taiwan,asia-east1
+Hong Kong,Hong Kong,asia-east2
+Tokyo,Japan,asia-northeast1
+Osaka,Japan,asia-northeast2
+Seoul,South Korea,asia-northeast3
+Mumbai,India,asia-south1
+Delhi,India,asia-south2
+Jurong West,Singapore,asia-southeast1
+Jakarta,Indonesia,asia-southeast2
+Sydney,Australia,australia-southeast1
+Melbourne,Australia,australia-southeast2
+Warsaw,Poland,europe-central2
+Hamina,Finland,europe-north1
+Madrid,Spain,europe-southwest1
+St. Ghislain,Belgium,europe-west1
+London,United Kingdom,europe-west2
+Frankfurt,Germany,europe-west3
+Eemshaven,Netherlands,europe-west4
+Zurich,Switzerland,europe-west6
+Milan,Italy,europe-west8
+Paris,France,europe-west9
+Berlin,Germany,europe-west10
+Turin,Italy,europe-west12
+Doha,Katar,me-central1
+Tel Aviv,Israel,me-west1
+Montréal,Canada,northamerica-northeast1
+Toronto,Canada,northamerica-northeast2
+São Paulo,Brazil,southamerica-east1
+Santiago,Chile,southamerica-west1
+Council Bluffs,Iowa,us-central1
+Moncks Corner,South Carolina,us-east1
+Ashburn,Virginia,us-east4
+Columbus,Ohio,us-east5
+Dallas,Texas,us-south1
+The Dalles,Oregon,us-west1
+Los Angeles,California,us-west2
+Salt Lake City,Utah,us-west3
+Las Vegas,Nevada,us-west4
+CR-USA,CR-USA,us
+CR-ASIA,CR-ASIA,asia
+CR-ASIA,CR-ASIA,asia1
+CR-Europe,CR-Europe,eu
+CR-Europe,CR-Europe,europe
+CR-Global,CR-Global,global
+CR-USA,CR-USA,nam1
+CR-USA,CR-USA,nam2
+CR-USA,CR-USA,nam3
+CR-USA,CR-USA,nam4
+CR-USA,CR-USA,nam5
+CR-USA,CR-USA,nam6
+CR-USA,CR-USA,nam7
+CR-USA,CR-USA,nam8
+CR-USA,CR-USA,nam9
+CR-USA,CR-USA,nam10
+CR-USA,CR-USA,nam11
+CR-USA,CR-USA,nam12
+CR-USA,CR-USA,nam13
+CR-Global,CR-Global,nam-eur-asia1
+CR-Global,CR-Global,nam-eur-asia2
+CR-Global,CR-Global,nam-eur-asia3
+CR-Europe,CR-Europe,eur1
+CR-Europe,CR-Europe,eur2
+CR-Europe,CR-Europe,eur3
+CR-Europe,CR-Europe,eur4
+CR-Europe,CR-Europe,eur5
+CR-Europe,CR-Europe,eur6
