@@ -14,3 +14,14 @@ We use the following command to download google's health reports.
 wget --recursive --domains status.cloud.google.com --no-parent --html-extension --convert-links --no-clobber https://status.cloud.google.com/
 ```
 The individual incident reports are then in `./status.cloud.google.com/incidents/`.
+
+### Structured data
+Outages:
+- locations
+- start time
+- severity (low, medium, high)
+
+Storms:
+- location
+- time
+- size
