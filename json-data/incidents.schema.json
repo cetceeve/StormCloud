@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "/",
+  "title": "Incidents",
+  "type": "array",
+  "description": "Incident in the public status dashboard",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Unique identifier for this incident.",
+        "type": "string"
+      },
+      "number": {
+        "description": "Deprecated, please use id instead. The number is a uint64 numeric unique identifier for this incident.",
+        "type": "string"
+      },
+      "begin": {
+        "description": "Time in RFC3339 format when this incident started.",
+        "type": "string"
+      },
+      "created": {
+        "description": "Time RFC3339 format when the entry was created.",
+        "type": "string"
+      },
+      "end": {
+        "description": "Time RFC3339 format when this incident ended.",
+        "type": "string"
+      },
+      "modified": {
+        "description": "Time RFC3339 format when this incident is updated.",
+        "type": "string"
+      },
+      "external_desc": {
+        "description": "Summary for this incident.",
+        "type": "string"
+      },
+      "updates": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "created": {
+              "description": "RFC3339-formatted time when this update was created.",
+              "type": "string"
+            },
+            "modified": {
+              "description": "RFC3339-formatted time when the status update was edited.",
+              "type": "string"
+            },
+            "text": {
+              "description": "The content of the incident status update.",
+              "type": "string"
+            },
+            "when": {
+              "description": "RFC3339-formatted time when this update was created.",
+              "type": "string"
+            },
+            "status": {
+              "description": " Service status at the time this status update was posted.",
+              "type": "string"
+            },
+            "affected_locations": {
+              "type": "array",
+              "description": "List of locations that are affected at the time when the status update was posted.",
+              "items": {
+                "type": "object",
+                "description": "An affected location",
+                "properties": {
+                  "title": {
+                    "description": "Title of the location.",
+                    "type": "string"
+                  },
+                  "id": {
+                    "description": "Unique ID for the location.",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "most_recent_update": {
+        "description": "The most recent update for this incident.",
+        "type": "object",
+        "properties": {
+          "created": {
+            "type": "string"
+          },
+          "modified": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "when": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "status_impact": {
+        "description": "Service level impact from this incident.",
+        "type": "string"
+      },
+      "severity": {
+        "description": "The severity of this incident (high, medium).",
+        "type": "string"
+      },
+      "affected_products": {
+        "type": "array",
+        "description": "List of products that were affected by this incident.",
+        "items": {
+          "type": "object",
+          "description": "An affected product",
+          "properties": {
+            "title": {
+              "description": "Title of the product.",
+              "type": "string"
+            },
+            "id": {
+              "description": "Unique ID for the product.",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "currently_affected_locations": {
+        "type": "array",
+        "description": "List of locations that are currently affected by this incident.",
+        "items": {
+          "type": "object",
+          "description": "An affected location",
+          "properties": {
+            "title": {
+              "description": "Title of the location.",
+              "type": "string"
+            },
+            "id": {
+              "description": "Unique ID for the location.",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "previously_affected_locations": {
+        "type": "array",
+        "description": "List of locations that were previously affected by this incident.",
+        "items": {
+          "type": "object",
+          "description": "An affected location",
+          "properties": {
+            "title": {
+              "description": "Title of the location.",
+              "type": "string"
+            },
+            "id": {
+              "description": "Unique ID for the location.",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "service_key": {
+        "description": "Deprecated, use affected_products instead. Unique ID for the product affected by this incident.",
+        "type": "string"
+      },
+      "service_name": {
+        "description": "Deprecated, use affected_products instead. Name of the product affected by this incident.",
+        "type": "string"
+      },
+      "uri": {
+        "description": "URI for this incident on the Status Dashboard.",
+        "type": "string"
+      }
+    }
+  }
+}
