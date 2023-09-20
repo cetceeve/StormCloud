@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import linear_model
+import statsmodels.api as sm
 
 df = pd.read_csv("./cars.csv")
 
@@ -29,3 +30,7 @@ predicted_Y = reg.predict(X)
 
 plt.plot(X, predicted_Y, color="red")
 plt.savefig("cars_regression.png")
+
+X = sm.add_constant(X) # add const to allow for constant offset of gradient
+stats_results = sm.OLS(Y, X).fit()
+print(stats_results.summary())
